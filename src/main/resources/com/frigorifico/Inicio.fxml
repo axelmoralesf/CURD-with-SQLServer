@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D9F2D0;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.frigorifico.PrimaryController">
+   <children>
+      <ImageView fitHeight="170.0" fitWidth="192.0" layoutX="226.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="175.0" layoutY="212.0" text="Usuario:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="158.0" layoutY="262.0" text="Contraseña:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="user" layoutX="293.0" layoutY="215.0" />
+      <Button fx:id="btn_Exit" layoutX="174.0" layoutY="306.0" mnemonicParsing="false" onAction="#btn_OnExit" prefHeight="45.0" prefWidth="104.0" text="Salir">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Button fx:id="btn_Login" layoutX="344.0" layoutY="306.0" mnemonicParsing="false" onAction="#btn_OnLogin" prefHeight="45.0" prefWidth="104.0" text="Login">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <PasswordField fx:id="password" layoutX="293.0" layoutY="265.0" />
+   </children>
+</Pane>
